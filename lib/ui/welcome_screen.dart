@@ -9,25 +9,25 @@ class WelcomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Homework 13'),
+        title: const Text('Homework 13'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ElevatedButton(child: Text('Flutter bloc shop'),
-                onPressed: (){
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) {
-                        return const MyHomeBlocPage();
-                      }));
+            ElevatedButton(
+                child: const Text('Flutter bloc shop'),
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return const MyHomeBlocPage();
+                  }));
                 }),
-            ElevatedButton(child: Text('Flutter cubit shop'),
-                onPressed: (){
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) {
-                        return const MyHomeCubitPage();
-                      }));
+            ElevatedButton(
+                child: const Text('Flutter cubit shop'),
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return const MyHomeCubitPage();
+                  }));
                 }),
           ],
         ),

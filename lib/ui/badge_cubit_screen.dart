@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_shop/blocs/badge_bloc.dart';
-import 'package:flutter_bloc_shop/blocs/menu_bloc.dart';
 import 'package:flutter_bloc_shop/cubits/badge_cubit.dart';
 import 'package:flutter_bloc_shop/cubits/menu_cubit.dart';
 import 'package:flutter_bloc_shop/model/coffee_menu.dart';

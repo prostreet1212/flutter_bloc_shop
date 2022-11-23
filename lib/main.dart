@@ -1,15 +1,11 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bloc_shop/blocs/badge_bloc.dart';
 import 'package:flutter_bloc_shop/blocs/menu_bloc.dart';
 import 'package:flutter_bloc_shop/cubits/badge_cubit.dart';
 import 'package:flutter_bloc_shop/cubits/menu_cubit.dart';
-import 'package:flutter_bloc_shop/ui/my_home_bloc_page.dart';
-import 'package:flutter_bloc_shop/ui/my_home_cubit_page.dart';
 import 'package:flutter_bloc_shop/ui/welcome_screen.dart';
 import 'package:oktoast/oktoast.dart';
-
 
 void main() {
   runApp(const MyApp());
@@ -22,10 +18,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider<MenuBloc>(create:(_)=>MenuBloc()),
-        BlocProvider<BadgeBloc>(create: (_)=>BadgeBloc()),
-        BlocProvider<MenuCubit>(create:(_)=>MenuCubit()),
-        BlocProvider<BadgeCubit>(create: (_)=>BadgeCubit())
+        BlocProvider<MenuBloc>(create: (_) => MenuBloc()),
+        BlocProvider<BadgeBloc>(create: (_) => BadgeBloc()),
+        BlocProvider<MenuCubit>(create: (_) => MenuCubit()),
+        BlocProvider<BadgeCubit>(create: (_) => BadgeCubit())
       ],
       child: OKToast(
         textStyle: const TextStyle(fontSize: 19.0, color: Colors.white),
@@ -45,5 +41,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-

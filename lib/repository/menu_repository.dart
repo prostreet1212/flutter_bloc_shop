@@ -4,7 +4,7 @@ abstract class MenuRepository {
   const MenuRepository();
 
   List<CoffeeMenu> getListMenu();
-  
+
   void changeMenuStatus(CoffeeMenu coffeeMenu);
 }
 
